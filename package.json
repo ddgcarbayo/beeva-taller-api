@@ -1,10 +1,16 @@
 {
   "name": "beeva-taller-api",
+  "homepage": "https://github.com/beeva/beeva-taller-api",
   "version": "1.0.0",
   "description": "Ejemplos del taller",
-  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
     "start": "echo welcome"
+  },
+  "devDependencies": {
+
   },
   "repository": {
     "type": "git",
@@ -21,6 +27,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/beeva/beeva-taller-api/issues"
-  },
-  "homepage": "https://github.com/beeva/beeva-taller-api"
+  }
 }
