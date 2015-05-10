@@ -2,15 +2,12 @@
   "name": "beeva-taller-api",
   "homepage": "https://github.com/beeva/beeva-taller-api",
   "version": "1.0.0",
-  "description": "Ejemplos del taller",
+  "description": "Ejemplos del taller. Ejemplo 1",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "echo welcome"
-  },
-  "devDependencies": {
-
+    "start": "cd src && bower install && npm install && grunt"
   },
   "repository": {
     "type": "git",

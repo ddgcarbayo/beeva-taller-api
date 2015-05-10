@@ -66,8 +66,8 @@ module.exports = function (grunt) {
       },
       dist: {
         src: ['public/js/app.js'],
-        dest: 'public/js/concat.js',
-      },
+        dest: 'public/js/concat.js'
+      }
     },
 
     //this is currently turned off, since jquery KILLS it
