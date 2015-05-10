@@ -1,0 +1,31 @@
+{
+  "name": "beeva-taller-api",
+  "homepage": "https://github.com/beeva/beeva-taller-api",
+  "version": "1.0.0",
+  "description": "Ejemplos del taller",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "echo welcome"
+  },
+  "devDependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeva/beeva-taller-api.git"
+  },
+  "keywords": [
+    "api",
+    "ejemplos",
+    "node.js",
+    "express",
+    "angular",
+    "websockets"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beeva/beeva-taller-api/issues"
+  }
+}
