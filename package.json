@@ -10,7 +10,7 @@
     "start": "echo welcome"
   },
   "devDependencies": {
-
+    "http-server": "^0.8.0"
   },
   "repository": {
     "type": "git",
