@@ -5,11 +5,15 @@ var auth = require(__dirname+'/auth');
 
 server.use(restify.queryParser());
 
-server.get('/random/:min/:max', responses.random);
-server.get('/random/:min/:max/:decimales', auth.check, responses.random);
+server.get('/bares/', responses.bares);
+//server.get('/random/:min/:max/:decimales', auth.check, responses.random);
+
+server.get(/\/public\/?.*/, restify.serveStatic({
+    directory: __dirname
+}));
+
 
 server.get('/token',auth.token);
-
 
 
 server.listen(8080, function() {

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <meta charset=utf-8 />
+    <title>Angular JS Demo</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.1/angular.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="/public/maps.js"></script>
+    <script src="/public/app.js"></script>
+    <style type="text/css">
+        .angular-google-map-container { height: 600px; }
+    </style>
+</head>
+<body ng-app="myApp">
+<div class="container-fluid" ng-controller="myCntr">
+    <ui-gmap-google-map id="mapa" center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+</div>
+</body>
+</html>

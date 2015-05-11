@@ -1,4 +1,7 @@
+var request       = require('request');
+
 var responses = {
+    key : 'AIzaSyCXUzZqfijRjjAanivcA6orpuwPXyjJD00',
     error : function(req,res,next,code,msg){
         res.send({
             code : code,
@@ -13,33 +16,47 @@ var responses = {
         });
         next();
     },
-    random : function(req,res,next){
-        var min = req.params.min || false;
-        var max = req.params.max || false;
-        var decimales = req.params.decimales || false;
-        if(!min || !max || isNaN(min) || isNaN(max) || (decimales && isNaN(decimales)) || (max == min)) return responses.error(req,res,next,400,'Los parámetros mínimo y máximo son obligatorios y han de ser numéricos y distintos');
+    request : function(uri,cb){
+        var options = {
+            method: 'GET',
+            uri: uri
+        };
 
-
-        function roundWDecimals(n, decimals) {
-            if (!isNaN(parseFloat(n)) && isFinite(n)) {
-                if (typeof(decimals) == typeof(undefined)) {
-                    decimals = 0;
-                }
-                var decimalPower = Math.pow(10, decimals);
-                return Math.round(parseFloat(n) * decimalPower) / decimalPower;
+        request(options, function(error, response) {
+            if(!error){
+                cb(response.body);
+            } else {
+                cb(false);
             }
-            return NaN;
-        }
+        });
+    },
+    getPlaces : function(lat,long,cb){
+      responses.request('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key='+key+'&location='+lat+','+long+'&radius=3000',function(data){
+            console.log(data);
+            cb(data);
+      });
+    },
+    getIpPlace : function(ip,cb){
+        responses.request('http://ip-api.com/json/'+ip,function(data){
+            console.log(data);
+            cb(data);
+        });
+    },
+    getWeather : function(city,country){
+        responses.request('http://api.openweathermap.org/data/2.5/weather?q='+city+','+country,function(data){
+            console.log(data);
+            cb(data);
+        });
+    },
+    bares : function(req,res,next){
+        //https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDeCXCJhyxs_T-MxVfbIhE1RogHkXur5Oc&location=40.4352,-3.6729&radius=3000
+        // https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCXUzZqfijRjjAanivcA6orpuwPXyjJD00&location=40.4352,-3.6729&radius=3000
+        // http://ip-api.com/json/208.80.152.201
+        // http://api.openweathermap.org/data/2.5/weather?q=Madrid,es
+        var ip = (req.connection.remoteAddress || false);
+        if(ip)
 
-        min=parseFloat(min); max=parseFloat(max);
-        if(max<min){
-            var aux=min;
-            min=max;
-            max=aux;
-        }
-        var value=(Math.random() * (max - min)) + min;
-        if(decimales) value = roundWDecimals(value,decimales);
-        return responses.success(req,res,next,200,value);
+        return responses.success(req,res,next,200,[]);
     }
 };
 

@@ -8,6 +8,7 @@
     "repository": "",
     "dependencies": {
         "restify": "*",
+        "request" : "*",
         "jsonwebtoken": "^0.3.0",
         "express-jwt": "^0.1.3",
         "composable-middleware": "^0.3.0"
