@@ -1,7 +1,7 @@
 //http://en.wikipedia.org/w/api.php?action=query&list=recentchanges&format=json&rcprop=title|ids|sizes|flags|user
 
 // connect to our socket server
-var socket = io.connect('http://192.168.0.144:1337/');
+var socket = io.connect();
 
 var app = app || {};
 
@@ -27,7 +27,10 @@ $(function(){
 	});
 
 	$clearAllPosts.click(function(e){
-		$allPostsTextArea.text('');
+        socket.emit("clean", {},
+            function(data){
+                $allPostsTextArea.text('');
+            });
 	});
 
 	$sendBlastButton.click(function(e){
