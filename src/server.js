@@ -13,7 +13,7 @@ server.get(/\/public\/?.*/, restify.serveStatic({
 }));
 
 
-server.get('/token',auth.token);
+//server.get('/token',auth.token);
 
 
 server.listen(8080, function() {
