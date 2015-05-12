@@ -8,6 +8,8 @@ Para lanzar este ejercicio utilice el siguiente
 
     npm start
 
+Generará una aplicación en el puerto 1337
+
 ### Otros ejercicios
 * [Documentación y Presentacion](https://github.com/beeva/beeva-taller-api)
 * [Ejercicio 2](https://github.com/beeva/beeva-taller-api/tree/ejemplo-2)
