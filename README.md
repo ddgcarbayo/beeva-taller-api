@@ -7,8 +7,9 @@ Recomendamos utilizar el siguiente gestor de versiones de [node.js](https://node
 ### Ejercicios
 * [Documentación y Presentacion](https://github.com/beeva/beeva-taller-api)
 * [Ejercicio 1](https://github.com/beeva/beeva-taller-api/tree/ejemplo-1)
-* [Ejercicio 2](https://github.com/beeva/beeva-taller-api/tree/ejemplo-2)
 * [Ejercicio 3](https://github.com/beeva/beeva-taller-api/tree/ejemplo-3)
+* [Ejercicio 4](https://github.com/beeva/beeva-taller-api/tree/ejemplo-4)
+* [Ejercicio 5](https://github.com/beeva/beeva-taller-api/tree/ejemplo-5)
 * [Ejercicio final](https://github.com/beeva/beeva-taller-api/tree/ejemplo-final)
 
 ¡Muchas gracias por asistir!
