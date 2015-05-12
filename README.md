@@ -1,12 +1,14 @@
 # Workshop: Cómo consumir APIS II #
 
-Ejemplo 5 : Mashups de APIs.
+## Ejemplo 5: Mashups de APIs
 
-Para la ejecución de los ejercicios ss necesario tener instalado node.js.
+Ejercicio que genera una aplicación Angular en el puerto 8080 que nos ofrece bares cerca indicándonos además, el tiempo que hace (para no salir a por cerveza bajo la lluvia)
 
-Recomendamos utilizar el siguiente gestor de versiones de [node.js](https://nodejs.org/) e [io.js](https://iojs.org/):  [https://github.com/creationix/nvm](https://github.com/creationix/nvm),  aunque también se pueden utilizar los gestores de paquetes o instaladores de su sistema operativo.
+Para lanzar este ejercicio utilice el siguiente
 
-### Ejercicios
+    npm start
+
+### Otros ejercicios
 * [Documentación y Presentacion](https://github.com/beeva/beeva-taller-api)
 * [Ejercicio 1](https://github.com/beeva/beeva-taller-api/tree/ejemplo-1)
 * [Ejercicio 2](https://github.com/beeva/beeva-taller-api/tree/ejemplo-2)
