@@ -16,7 +16,26 @@
 </head>
 <body ng-app="myApp">
 <div class="container-fluid" ng-controller="myCntr">
-    <ui-gmap-google-map id="mapa" center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    <div class="row">
+        <div class="col-xs-12" ng-if="weather">
+            <span ng-if="info && info.city">{{info.city}}</span>
+            <img ng-src="http://openweathermap.org/img/w/{{weather.icon}}.png">
+            <span>{{weather.temp}}º</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ui-gmap-google-map id="mapa" center='map.center' zoom='map.zoom'>
+                <ui-gmap-marker ng-repeat="m in map.markers" coords="m" click="onMarkerClicked(m)" idKey="m.id">
+                    <ui-gmap-window ng-cloak  coords="map.infoWindowWithCustomClass.coords">
+                        <p><strong>{{m.name}}</strong><br>
+                            {{m.dir}}
+                        </p>
+                    </ui-gmap-window>
+                </ui-gmap-marker>
+            </ui-gmap-google-map>
+        </div>
+    </div>
 </div>
 </body>
 </html>
