@@ -2,11 +2,13 @@
 
 ## Ejemplo 2: Generación de una API básica
 
-Para la ejecución de los ejercicios ss necesario tener instalado node.js.
+Para lanzar este ejercicio utilice el siguiente
 
-Recomendamos utilizar el siguiente gestor de versiones de [node.js](https://nodejs.org/) e [io.js](https://iojs.org/):  [https://github.com/creationix/nvm](https://github.com/creationix/nvm),  aunque también se pueden utilizar los gestores de paquetes o instaladores de su sistema operativo.
+    npm start
 
-### Ejercicios
+Genera una API en el puerto 8080
+
+### Otros ejercicios
 * [Documentación y Presentacion](https://github.com/beeva/beeva-taller-api)
 * [Ejercicio 1](https://github.com/beeva/beeva-taller-api/tree/ejemplo-1)
 * [Ejercicio 3](https://github.com/beeva/beeva-taller-api/tree/ejemplo-3)
