@@ -1,7 +1,0 @@
-{
-  "name": "p1",
-  "version": "0.0.0",
-  "dependencies": {
-    "bootstrap.css": "~2.3.2"
-  }
-}

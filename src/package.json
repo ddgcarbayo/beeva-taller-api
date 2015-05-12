@@ -1,38 +1,36 @@
 {
-  "name": "p1",
-  "description":"",
-  "author":"",
-  "version": "0.0.1",
-  "main": "server.js",
-  "private": true,
-  "repository": "",
-  "dependencies": {
-    "express": "~3.4.6",
-    "socket.io": "~0.9.16",
-    "ejs": "~0.8.5",
-    "express-device": "~0.3.7"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "bower": "~0.9.2",
-    "grunt-concurrent":"~0.4.2",
-    "grunt-nodemon":"~0.1.2",
-    "grunt-contrib-connect": "~0.2.0",
-    "grunt-contrib-cssmin": "^0.9.0",
-    "grunt-contrib-less": "~0.8.2",
-    "grunt-contrib-sass":"~0.6.0",
-    "grunt-contrib-stylus":"~0.11.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint":"~0.8.0",
-    "grunt-contrib-concat":"~0.3.0",
-    "grunt-contrib-uglify":"~0.2.7",
-    "grunt-open": "~0.2.2",
-    "grunt-wait":"~0.1.0",
-    "matchdep": "~0.1.2",
-    "connect-livereload": "~0.1.3",
-    "moment": "~2.0.0"
-  },
+  "name": "beeva-taller-api",
+  "homepage": "https://github.com/beeva/beeva-taller-api",
+  "version": "1.0.0",
+  "description": "Ejemplos del taller",
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "echo welcome"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeva/beeva-taller-api.git"
+  },
+  "keywords": [
+    "api",
+    "ejemplos",
+    "node.js",
+    "express",
+    "angular",
+    "websockets"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beeva/beeva-taller-api/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "cookie-session": "^1.1.0",
+    "cors": "^2.6.0",
+    "express-session": "^1.11.2",
+    "method-override": "^2.3.2"
   }
 }

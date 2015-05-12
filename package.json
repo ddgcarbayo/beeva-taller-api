@@ -24,5 +24,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/beeva/beeva-taller-api/issues"
+  },
+  "dependencies": {
+    "express": "^4.12.3"
   }
 }
