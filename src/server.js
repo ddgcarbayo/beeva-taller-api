@@ -8,8 +8,9 @@ server.use(restify.queryParser());
 server.get('/bares/', responses.bares);
 //server.get('/random/:min/:max/:decimales', auth.check, responses.random);
 
-server.get(/\/public\/?.*/, restify.serveStatic({
-    directory: __dirname
+server.get(/^\/?.*/, restify.serveStatic({
+    directory: __dirname + '/public',
+    default: 'index.html'
 }));
 
 
