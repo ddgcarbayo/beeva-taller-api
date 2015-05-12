@@ -18,7 +18,7 @@
     <![endif]-->
 </head>
 <body ng-app="myApp">
-<div class="container-fluid" ng-controller="myNoteCtrl">
+<div class="container-fluid" ng-controller="myChartCtrl">
     <div class="row">
 
         <div class="col-md-8 col-md-offset-3">
@@ -28,28 +28,13 @@
         <div class="col-md-8 col-md-offset-2">
             <div id="iframe1" class="well">
                 <nvd3-line-chart
-                    data="bar"
+                    data="data.bar"
                     id="barID"
                     showXAxis="true"
                     showYAxis="true"
                     tooltips="true"
                     interactive="true">
                 </nvd3-line-chart>
-            </div>
-        </div>
-
-        <div class="col-md-8 col-md-offset-2">
-            <div id="iframe1" class="well">
-                <nvd3-pie-chart
-                    data="cheese"
-                    id="cheeseID"
-                    width="550"
-                    height="350"
-                    x="xFunction()"
-                    y="yFunction()"
-                    showLabels="true">
-                    <svg></svg>
-                </nvd3-pie-chart>
             </div>
         </div>
     </div>
