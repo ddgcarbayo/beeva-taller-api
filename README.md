@@ -8,13 +8,18 @@ Para lanzar este ejercicio utilice el siguiente
 
 Generará una API en el puerto 8080
 
-### Otros ejercicios
+### Ejercicios
 * [Documentación y Presentacion](https://github.com/beeva/beeva-taller-api)
-* [Ejercicio 1](https://github.com/beeva/beeva-taller-api/tree/ejemplo-1)
-* [Ejercicio 2](https://github.com/beeva/beeva-taller-api/tree/ejemplo-2)
-* [Ejercicio 4](https://github.com/beeva/beeva-taller-api/tree/ejemplo-4)
-* [Ejercicio 5](https://github.com/beeva/beeva-taller-api/tree/ejemplo-5)
-* [Ejercicio final](https://github.com/beeva/beeva-taller-api/tree/ejemplo-final)
+* [Visualización Sencilla](https://github.com/beeva/beeva-taller-api/tree/ejemplo-0)
+* [Sincronización Objetos Front-Back](https://github.com/beeva/beeva-taller-api/tree/ejemplo-1)
+* [Generación API Básica](https://github.com/beeva/beeva-taller-api/tree/ejemplo-2)
+* [Generación API con JWT](https://github.com/beeva/beeva-taller-api/tree/ejemplo-3)
+* [Webhooks](https://github.com/beeva/beeva-taller-api/tree/ejemplo-4)
+* [Mashups](https://github.com/beeva/beeva-taller-api/tree/ejemplo-5)
+
+### Documentación
+* [Taller 1](http://es.slideshare.net/BEEVA_es/workshop-1-introduccion-api-rest)
+* [Taller 2](http://es.slideshare.net/BEEVA_es/workshop-ap-is-2-api-rest)
 
 ¡Muchas gracias por asistir!
 
