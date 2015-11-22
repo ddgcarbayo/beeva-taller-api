@@ -16,6 +16,10 @@ Recomendamos utilizar el siguiente gestor de versiones de [node.js](https://node
 ### Documentación
 * [Taller 1](http://es.slideshare.net/BEEVA_es/workshop-1-introduccion-api-rest)
 * [Taller 2](http://es.slideshare.net/BEEVA_es/workshop-ap-is-2-api-rest)
+ 
+### Documentación
+* [Streaming Taller 1](http://www.centrodeinnovacionbbva.com/eventos/evento-workshop-como-consumir-apis-i-nivel-basico)
+* [Streaming Taller 2](http://www.centrodeinnovacionbbva.com/eventos/evento-workshop-como-consumir-apis-ii-nivel-avanzado)
 
 ¡Muchas gracias por asistir!
 
